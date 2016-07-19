@@ -10,6 +10,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class LoginJavaFX extends Application
 {
@@ -25,7 +26,7 @@ public class LoginJavaFX extends Application
     //method to load database file
     public void loadUserDB(){
         try {
-            UserDB.setUsers((ArrayOrderedList) UserIO.readUsers());
+            UserDB.setUsers((ArrayList) UserIO.readUsers());
         } catch (IOException e) {
             System.err.print("Fail to open/read users.dat file");
         } catch (ClassNotFoundException e) {

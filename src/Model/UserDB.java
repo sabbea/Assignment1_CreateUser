@@ -3,7 +3,6 @@ package Model;
 import Utility.ArrayOrderedList;
 
 import java.util.ArrayList;
-import java.util.*;
 
 /**
  * Created by Abhishek on 6/30/2016.
@@ -11,14 +10,14 @@ import java.util.*;
 public class UserDB {
 
     //creates array list to store user data
-    private static ArrayOrderedList<User> users = new ArrayOrderedList<User>();
+    private static ArrayList<User> users = new ArrayList<User>();
 
-    public static ArrayOrderedList<User> getUsers() {
+    public static ArrayList<User> getUsers() {
         return users;
 
     }
 
-    public static void setUsers(ArrayOrderedList<User> users) {
+    public static void setUsers(ArrayList users) {
         UserDB.users = users;
     }
 
