@@ -56,12 +56,15 @@ public class RegisterController
                 {
                     //creates new user
                     User user = new User(firstn.getText(), lastn.getText(), dateof.getText(), gender.getText(), Username.getText(), email.getText(), number.getText(), Password.getText(), ConPassword.getText());
-                    //adds user to database
+                    //adds user to database using Ordered List
+
                     UserDB.getUsers().add(user);
+
+
                     try {
                         UserIO.writeUsers(UserDB.getUsers());
                     } catch (IOException e) {
-                        System.err.print("Cannot write UserDB to binary file");
+                        System.err.print("Cannot write UserDB to binary file" + e);
 
                     }
                 }

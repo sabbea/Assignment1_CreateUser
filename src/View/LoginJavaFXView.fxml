@@ -22,7 +22,8 @@
   </rowConstraints>
    <children>
       <Button mnemonicParsing="false" onMouseClicked="#openRegisterView" prefHeight="70.0" prefWidth="275.0" text="Register" GridPane.rowIndex="3" />
-      <Button mnemonicParsing="false" onMouseClicked="#openLogin" prefHeight="70.0" prefWidth="281.0" text="Sign In" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+       <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="281.0" text="Sign In" GridPane.columnIndex="1"
+               GridPane.rowIndex="3"/>
       <Label prefHeight="40.0" prefWidth="233.0" text="Username" GridPane.rowIndex="1" />
       <Label prefHeight="39.0" prefWidth="228.0" text="Password" GridPane.rowIndex="2" />
       <TextField fx:id="Username" GridPane.columnIndex="1" GridPane.rowIndex="1" />

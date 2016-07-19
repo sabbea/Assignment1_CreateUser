@@ -8,9 +8,7 @@ import Model.Person;
  */
 
 
-
-
-    public class User extends Person implements Serializable
+public class User extends Person implements Serializable, Comparable<User>
     {
         private String userName;
         private String email;
@@ -88,6 +86,15 @@ import Model.Person;
         this.email = email;
     }
 
+        @Override
+        public int compareTo(User user) {
+            return (this.userName.compareTo(user.userName));
+
+        }
+
+        public boolean equals(User user) {
+            return (this.userName).equals(user.userName);
+        }
 
     @Override
     public String toString() {
@@ -101,4 +108,5 @@ import Model.Person;
                 '}';
     }
 
-}
+
+    }

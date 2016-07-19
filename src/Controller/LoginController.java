@@ -1,5 +1,6 @@
 package Controller;
 
+import Model.User;
 import Model.UserDB;
 import View.RegisterFXView;
 import javafx.fxml.FXML;
