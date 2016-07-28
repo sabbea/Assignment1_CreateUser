@@ -17,6 +17,7 @@ public class ArrayQueueTest {
         nameQueue.enQueue("C");
         nameQueue.enQueue("D");
         assertEquals(4, nameQueue.size());
+        System.out.println(nameQueue);
 
     }
 
@@ -26,6 +27,7 @@ public class ArrayQueueTest {
         nameQueue.enQueue("B");
         nameQueue.enQueue("C");
         assertEquals(false, nameQueue.isEmpty());
+        System.out.println(nameQueue);
 
     }
 
@@ -37,6 +39,7 @@ public class ArrayQueueTest {
         nameQueue.enQueue("C");
         nameQueue.enQueue("D");
         assertEquals(false, nameQueue.isEmpty());
+        System.out.println(nameQueue);
 
     }
 
@@ -48,6 +51,7 @@ public class ArrayQueueTest {
         nameQueue.enQueue("D");
         nameQueue.deQueue();
         assertEquals(3, nameQueue.size());
+        System.out.println(nameQueue);
 
     }
 

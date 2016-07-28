@@ -9,11 +9,11 @@ public class ArrayIndexedList<T> implements IIndexedList<T> {
 
 
     private final int CAPACITY = 100;
+    protected boolean found;
+    protected int location;
     private T indexedList[];
     private int numElements;
     private int origSize;
-    protected boolean found;
-    protected int location;
 
     public ArrayIndexedList(int i) {
         indexedList = (T[]) new Object[CAPACITY];
@@ -132,11 +132,7 @@ public class ArrayIndexedList<T> implements IIndexedList<T> {
     @Override
     public boolean contains(T element) {
         find(element);
-        if (found) {
-            return true;
-        } else {
-            return false;
-        }
+        return found;
     }
 
     @Override
@@ -151,6 +147,15 @@ public class ArrayIndexedList<T> implements IIndexedList<T> {
 
     }
 
+    public String toString() {
+        String result = "";
+
+        for (int scan = 0; scan < numElements; scan++)
+            System.out.print(indexedList[scan]);
+
+
+        return result;
+    }
     @Override
     public T get(T element) {
         return null;

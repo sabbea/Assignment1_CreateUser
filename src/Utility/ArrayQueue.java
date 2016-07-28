@@ -72,7 +72,7 @@ public class ArrayQueue<T> implements IArrayQueue<T> {
     public String toString() {
         String result = "";
 
-        for (int scan = 0; scan < head; scan++)
+        for (int scan = 0; scan < numElements; scan++)
             result = result + queue[scan].toString() + "\n";
 
         return result;

@@ -17,6 +17,7 @@ public class ArrayIndexedListTest {
         indexedList.add(1, "B");
         indexedList.add(2, "C");
         indexedList.add(3, "D");
+        System.out.print(indexedList);
         assertEquals(4, indexedList.size());
     }
 
@@ -28,6 +29,7 @@ public class ArrayIndexedListTest {
         indexedList.add(3, "D");
         indexedList.set(2, "F");
         assertEquals(4, indexedList.size());
+        System.out.print(indexedList);
     }
 
     @org.junit.Test
@@ -57,7 +59,9 @@ public class ArrayIndexedListTest {
         indexedList.add(1, "B");
         indexedList.add(2, "C");
         indexedList.add(3, "D");
+        System.out.println(indexedList);
         indexedList.remove(2);
+        System.out.println(indexedList);
         assertEquals(3, indexedList.size());
     }
 

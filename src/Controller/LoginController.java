@@ -2,6 +2,7 @@ package Controller;
 
 import Model.User;
 import Model.UserDB;
+import View.HospitalListJavaFXView;
 import View.RegisterFXView;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -20,7 +21,7 @@ public class LoginController
     @FXML
     PasswordField Password;
 
-
+    boolean exist = false;
     public void openLogin()
     {
         //iterate through the userDB to find if user exists
@@ -34,8 +35,13 @@ public class LoginController
                 {
 
 
-                    status.setText("Login Successful");
-                    System.out.println("Welcome " + Username.getText() + "!");
+                    try {
+                        new HospitalListJavaFXView();
+                    } catch (IOException e) {
+                        System.err.println("Error opening hospital list view!");
+                        e.printStackTrace();
+                    }
+                    exist = true;
                 }
 
 

@@ -30,9 +30,9 @@ public class ArrayOrderedListTest {
         orderedList.add("C");
         orderedList.add("E");
         orderedList.add("F");
-        System.out.print(orderedList);
+        System.out.println(orderedList);
         orderedList.remove("E");
-        System.out.print(orderedList);
+        System.out.println(orderedList);
         assertEquals(4, orderedList.size());
 
     }

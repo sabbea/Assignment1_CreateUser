@@ -59,6 +59,16 @@ public class LinkedListQueue<T> implements ILinkedListQueue<T> {
         return element;
     }
 
+    public String toString() {
+        LinkedListNode<T> current = head;
+        String result = "";
+        while (current != null) {
+            result += current.getElement() + "\t";
+            current = current.getPointer();
+        }
 
+
+        return result;
+    }
 }
 

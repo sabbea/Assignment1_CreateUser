@@ -22,8 +22,8 @@
 //        if(head == null){
 //            head = newNode;
 //        }
-//        else if(((Comparable) element).compareTo(head.element)<0){
-//            element.getPointer() = head;
+//        else if (((Comparable) element).compareTo(head.element) < 0) {
+//            newNode.getPointer() = head;
 //            head = newNode;
 //        }
 //    }
